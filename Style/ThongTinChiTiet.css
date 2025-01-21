@@ -1,0 +1,272 @@
+/* Reset CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Setup */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main */
+
+/* Header */
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.header .logo a{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+}
+
+.header .nav li{
+    line-height: 80px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 25px;
+}
+
+.header .nav li:hover a,
+.header .nav li:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.header .user-function{
+    color: white;
+    display: flex;
+}
+
+.header .user-function .icon{
+    line-height: 80px;
+    font-size: 25px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .user-function .icon i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* Product Detail */
+.content{
+    margin-top: 80px;
+}
+
+.content .product-content{
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.content .detail{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .detail .product-pic{
+    flex-basis: 50%;
+}
+
+.content .detail .product-pic img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content .detail .product-info{
+    flex-basis: 40%;
+    font-size: 18px;
+}
+
+.content .detail .product-info .product-catalog{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 30px;
+    border: solid 1px red;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.content .detail .product-info h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.content .detail .product-info .price{
+    margin-bottom: 20px;
+}
+
+.content .detail .product-info .price .product-price{
+    margin-left: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.content .detail .product-info .number{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content .detail .product-info .number label{
+    margin-right: 20px;
+}
+
+.content .detail .product-info .number input[type="number"] {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.content .detail .product-info .number .plusminus {
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
+
+.content .detail .product-info .number .plusminus:hover{
+    background-color: lightgreen;
+    color: black;
+}
+
+.content .detail .product-info .number .plus {
+    margin-left: 10px;
+}
+
+.content .detail .product-info .number .minus {
+    margin-right: 10px;
+}
+
+.content .detail .product-info .number input[type="number"]::-webkit-inner-spin-button,
+.content .detail .product-info .number input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Ẩn nút tăng/giảm */
+    margin: 0;
+}
+
+.content .detail .product-info form{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.content .detail .product-info form .send-to-cart{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.content .detail .product-info form .send-to-cart:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.content .detail .product-info .feture > ul{
+    margin-left: 19px;
+}
+
+.content .detail .product-info .feture > ul > li{
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.footer .footer-about table td{
+    padding: 5px 25px;
+}
+
+.footer .footer-contact .fanpage{
+    margin-bottom: 30px;
+}
+
+.footer .footer-contact .fanpage a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 10px; 
+}
+
+.footer .footer-contact .fanpage a:hover .icon-facebook{
+    color: #4267B2;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-instagram{
+    color: #D62976;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-youtube{
+    color: #FF0000;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-github{
+    color: #CCC;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-linkedin{
+    color: #0077B5;
+}
+
+.footer .footer-contact .address p{
+    margin-bottom: 5px;
+}
+
+.footer .footer-contact .address p i{
+    margin-right: 5px;
+}

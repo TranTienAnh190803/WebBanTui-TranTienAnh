@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Image/Admin.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper{
+    width: 420px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: #EFF;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #EEE;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper button{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.wrapper button:hover{
+    background-color: gray;
+    color: black;
+}
+
+/* Go To Guest */
+.go-to-guest{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    border-bottom-right-radius: 20px;
+}
+
+.go-to-guest a{
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    color: yellow;
+    font-weight: 900;
+    
+}
+
+.go-to-guest:hover{
+    background-color: black;
+}
+
+.go-to-guest:hover a{
+    color: #EEE;
+}

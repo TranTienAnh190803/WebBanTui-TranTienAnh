@@ -1,0 +1,231 @@
+/* Reset CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Setup */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F1F1F1;
+}
+
+/* Main */
+.main{
+    height: 100vh;
+}
+
+/* Header */
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.header .logo a{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+}
+
+.header .nav li{
+    line-height: 80px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 25px;
+}
+
+.header .nav li:hover a,
+.header .nav li:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.header .user-function{
+    color: white;
+    display: flex;
+}
+
+.header .user-function .icon{
+    line-height: 80px;
+    font-size: 25px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .user-function .icon i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* Cart */
+.wrap{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrap .cart{
+    width: 70%;
+    background-color: white;
+    padding: 35px 60px;
+}
+
+.wrap .cart h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.wrap .cart .product-sent{
+    padding: 30px 0px;
+}
+
+.wrap .cart .product-sent .container{
+    margin: 20px 0px;
+    display: flex;
+}
+
+.wrap .cart .product-sent .container .product-image{
+    flex-basis: 20%;
+    margin-right: 10px;
+}
+
+.wrap .cart .product-sent .container .product-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrap .cart .product-sent .container .product-info{
+    flex-basis: 70%;
+}
+
+.wrap .cart .product-sent .container .product-info p{
+    margin-bottom: 10px;
+}
+
+.wrap .cart .product-sent .container form{
+    align-self: flex-end;
+}
+
+.wrap .cart .product-sent .container form button{
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+
+.wrap .cart .product-sent .container form button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.wrap .cart .product-sent .payment{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.wrap .cart .product-sent .payment form button{
+    font-size: 20px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.wrap .cart .product-sent .payment form button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.footer .footer-about table td{
+    padding: 5px 25px;
+}
+
+.footer .footer-contact .fanpage{
+    margin-bottom: 30px;
+}
+
+.footer .footer-contact .fanpage a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 10px; 
+}
+
+.footer .footer-contact .fanpage a:hover .icon-facebook{
+    color: #4267B2;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-instagram{
+    color: #D62976;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-youtube{
+    color: #FF0000;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-github{
+    color: #CCC;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-linkedin{
+    color: #0077B5;
+}
+
+.footer .footer-contact .address p{
+    margin-bottom: 5px;
+}
+
+.footer .footer-contact .address p i{
+    margin-right: 5px;
+}

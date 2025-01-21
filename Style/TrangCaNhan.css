@@ -1,0 +1,236 @@
+/* Reset CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Setup */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F1F1F1;
+}
+
+/* Main */
+.main{
+    height: 100vh;
+}
+
+/* Header */
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.header .logo a{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+}
+
+.header .nav li{
+    line-height: 80px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 25px;
+}
+
+.header .nav li:hover a,
+.header .nav li:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.header .user-function{
+    color: white;
+    display: flex;
+}
+
+.header .user-function .icon{
+    line-height: 80px;
+    font-size: 25px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .user-function .icon i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* Infromation */
+.wrap{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap .information{
+    width: 70%;
+    background-color: white;
+    padding: 35px 60px;
+}
+
+.wrap .information h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.wrap .information .user-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.wrap .information .image{
+    width: 30%;
+}
+
+.wrap .information .image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 500px;
+    border: solid 5px green;
+    cursor: pointer;
+}
+
+.wrap .information .image img:hover{
+    border: solid 5px blue;
+    filter: blur(1px);
+}
+
+.wrap .information form{
+    padding: 30px;
+    font-size: 18px;
+}
+
+.wrap .information form .info{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap .information form .info input[type="text"]{
+    padding: 8px 12px;
+    font-size: 18px;
+    flex-basis: 80%;
+}
+
+.wrap .information form .btn{
+    width: 100%;
+    text-align: end;
+    margin-top: 20px;
+}
+
+.wrap .information form .btn .Logout{
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.wrap .information form .btn .Update{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.wrap .information form .btn button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.footer .footer-about table td{
+    padding: 5px 25px;
+}
+
+.footer .footer-contact .fanpage{
+    margin-bottom: 30px;
+}
+
+.footer .footer-contact .fanpage a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 10px; 
+}
+
+.footer .footer-contact .fanpage a:hover .icon-facebook{
+    color: #4267B2;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-instagram{
+    color: #D62976;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-youtube{
+    color: #FF0000;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-github{
+    color: #CCC;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-linkedin{
+    color: #0077B5;
+}
+
+.footer .footer-contact .address p{
+    margin-bottom: 5px;
+}
+
+.footer .footer-contact .address p i{
+    margin-right: 5px;
+}

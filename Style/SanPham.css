@@ -1,0 +1,311 @@
+/* Reset CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Setup */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main */
+
+/* Header */
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.header .logo a{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+}
+
+.header .nav li{
+    line-height: 80px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 25px;
+}
+
+.header .nav li:hover a,
+.header .nav li:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.header .user-function{
+    color: white;
+    display: flex;
+}
+
+.header .user-function .icon{
+    line-height: 80px;
+    font-size: 25px;
+    padding: 0px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .user-function .icon i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* Products */
+.product{
+    margin-top: 80px;
+}
+
+.product .product-content{
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.product .main-product{
+    margin: 20px;
+    display: flex;
+    column-gap: 50px;
+    align-items: flex-start;
+}
+
+/* Products: Sidebar */
+.product .main-product .sidebar{
+    min-width: 20%;
+    position: sticky;
+    top: 100px;
+    border: solid 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.product .sidebar .product-type{
+    width: 100%;
+}
+
+.product .sidebar .product-type h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: block;
+    background-color: #555;
+    padding: 10px;
+    color: white;
+}
+
+.sidebar .product-type .search-product{
+    width: 90%;
+    margin: auto;
+    height: 45px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #ccc;
+}
+
+.sidebar .product-type .search-product input{
+    width: 100%;
+    height: 100%;
+    padding: 20px 45px 20px 20px;
+    border: none;
+}
+
+.sidebar .product-type .search-product button{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border: none;
+    background-color: white;
+    font-weight: 900;
+}
+
+.sidebar .product-type .search-product button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.product .sidebar .nav-content{
+    width: 100%;
+}
+
+.product .sidebar .nav-content form{
+    width: 100%;
+    height: 45px;
+}
+
+.product .sidebar .nav-content form button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product .sidebar .nav-content form button:hover{
+    background-color: black;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* Products: Main */
+.product .main-product .pd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.product .main-product .pd form{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.product .main-product .pd form button{
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    border: solid 2px #F1F1F1;
+}
+
+.product .main-product .pd form:hover button{
+    border: solid 3px #555;
+}
+
+.product .main-product .pd form button .product-pic{
+    position: relative;
+    overflow: hidden;
+}
+
+.product .main-product .pd form button .product-pic img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.product .main-product .pd form button .product-pic .product-detail{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    bottom: -46px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.6;
+}
+
+.product .main-product .pd form button:hover .product-pic .product-detail{
+    bottom: 0;
+}
+
+.product .main-product .pd form button .product-info{
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.product .main-product .pd form button .product-info p{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.product .main-product .pd form button .product-info .product-type{
+    opacity: 0.5;
+}
+
+/* .product .main-product .pd form button .product-info .product-name{
+    
+} */
+
+.product .main-product .pd form button .product-info .product-price{
+    color: red;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.footer .footer-about table td{
+    padding: 5px 25px;
+}
+
+.footer .footer-contact .fanpage{
+    margin-bottom: 30px;
+}
+
+.footer .footer-contact .fanpage a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 10px; 
+}
+
+.footer .footer-contact .fanpage a:hover .icon-facebook{
+    color: #4267B2;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-instagram{
+    color: #D62976;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-youtube{
+    color: #FF0000;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-github{
+    color: #CCC;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-linkedin{
+    color: #0077B5;
+}
+
+.footer .footer-contact .address p{
+    margin-bottom: 5px;
+}
+
+.footer .footer-contact .address p i{
+    margin-right: 5px;
+}

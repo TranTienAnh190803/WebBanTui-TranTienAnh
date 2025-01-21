@@ -1,0 +1,257 @@
+/* Reset CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Setup */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F1F1F1;
+}
+
+/* Main */
+.main{
+    height: 100vh;
+}
+
+/* Header */
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.header .logo a{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+}
+
+.header .nav{
+    display: flex;
+    list-style: none;
+}
+
+.header .nav li{
+    line-height: 80px;
+    width: 250px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 25px;
+}
+
+.header .nav li:hover a,
+.header .nav li:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.header .nav li form{
+    width: 100%;
+}
+
+.header .nav li button{
+    display: block;
+    width: 100%;
+    line-height: 80px;
+    font-size: 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.header .nav li button:hover{
+    color: black;
+    background-color: red;
+}
+
+/* Product List */
+.wrap{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrap .product-list{
+    width: 95%;
+    background-color: white;
+    padding: 35px 60px;
+}
+
+.wrap .product-list h1{
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.wrap .product-list .list{
+    margin-top: 30px;
+}
+
+.wrap .product-list .list .add-product{
+    margin: 50px 0px;
+    width: 100%;
+    text-align: end;
+}
+
+.wrap .product-list .list .add-product button{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.wrap .product-list .list .add-product button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.wrap .product-list .list .product-table table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.wrap .product-list .list .product-table table th,
+.wrap .product-list .list .product-table table td{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.wrap .product-list .list .product-table table th{
+    background-color: green;
+    color: white;
+}
+
+.wrap .product-list .list .product-table table td{
+    height: 200px;
+}
+
+.wrap .product-list .list .product-table table .product-img{
+    width: 15%;
+}
+
+.wrap .product-list .list .product-table table .product-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrap .product-list .list .product-table table .btn{
+    padding: 0;
+    width: 8%;
+}
+
+.wrap .product-list .list .product-table table .btn form{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap .product-list .list .product-table table .btn form button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.wrap .product-list .list .product-table table .btn form .update{
+    background-color: darkgoldenrod;
+}
+
+.wrap .product-list .list .product-table table .btn form .delete{
+    background-color: darkred;
+}
+
+.wrap .product-list .list .product-table table .btn form button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* Footer */
+.footer{
+    padding: 64px 16px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.footer .footer-about table td{
+    padding: 5px 25px;
+}
+
+.footer .footer-contact .fanpage{
+    margin-bottom: 30px;
+}
+
+.footer .footer-contact .fanpage a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin-right: 10px; 
+}
+
+.footer .footer-contact .fanpage a:hover .icon-facebook{
+    color: #4267B2;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-instagram{
+    color: #D62976;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-youtube{
+    color: #FF0000;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-github{
+    color: #CCC;
+}
+
+.footer .footer-contact .fanpage a:hover .icon-linkedin{
+    color: #0077B5;
+}
+
+.footer .footer-contact .address p{
+    margin-bottom: 5px;
+}
+
+.footer .footer-contact .address p i{
+    margin-right: 5px;
+}
